@@ -1,3 +1,5 @@
-FROM unbuntu-latest
+FROM alpine:3.14.2
 
-RUN apt update
+RUN apk update; \
+		apk upgrade; \
+		apk add curl
